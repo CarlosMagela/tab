@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Logica de programação.</h1>
+
+    <div id="output"></div>
+    <button onclick="mostrarTabuada()">Criar tabuada</button>
+    <button onclick="LimparTabuada()">Limpar</button>
+    <script>
+          function mostrarTabuada(){
+            //perguntar numero para o usuario 
+            var n = prompt("digite um numero");
+            //converter numero
+            n = parseFloat(n);
+
+            var mensagem = output.innerHTML;
+
+            //loop
+            var i = 1;
+            while(i<=100){
+
+                mensagem += i+ "x" + n + "=" +(n*i)+ "<br>";
+                i++;
+
+            }
+            output.innerHTML = mensagem;
+            //mostrar a tabuada
+          }
+          
+        
+
+
+    </script>
+</body>
+</html>
